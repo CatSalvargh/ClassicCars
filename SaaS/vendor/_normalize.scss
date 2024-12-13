@@ -1,16 +1,5 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/* CS: MY own resets border-size and remove margins and padding */
-/* reset box sizing on all ellements*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
 /* Document
    ========================================================================== */
 
@@ -20,7 +9,8 @@
  */
 
  html {
-    @include font($font-normal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
     line-height: 1.6; /* 1 */
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%; /* 2 */
