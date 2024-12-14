@@ -323,7 +323,7 @@ template {
 }
 
 body {
-  color: #03778f;
+  color: #415bc3;
 }
 
 img {
@@ -337,6 +337,14 @@ container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.unstyled-list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1, h2, h3, h5, h6, p {
@@ -374,6 +382,10 @@ txt-intro {
   font-size: 1.2rem;
 }
 
+.main-nav a {
+  color: rgb(255, 255, 255);
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,8 +393,8 @@ txt-intro {
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(4, 140, 168)), to(rgb(22, 219, 147)));
-  background: linear-gradient(rgb(4, 140, 168), rgb(22, 219, 147));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(84, 108, 201)), to(rgb(22, 219, 147)));
+  background: linear-gradient(rgb(84, 108, 201), rgb(22, 219, 147));
   color: rgb(255, 255, 255);
   padding-top: 7em;
   text-align: center;
@@ -396,7 +408,7 @@ txt-intro {
 
 .main-header {
   position: absolute;
-  top: 2em;
+  padding-top: 2em;
   left: 0;
   right: 0;
 }
@@ -408,8 +420,41 @@ txt-intro {
 }
 
 .main-nav {
-  display: none;
-  width: 60%;
+  background: rgb(191, 64, 149);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  mas-height: 100vh;
+}
+.main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 50vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main-nav li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  border-bottom: 1px solid #ac3a86;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn {
@@ -426,11 +471,11 @@ txt-intro {
 }
 
 .btn--primary {
-  background: rgb(211, 24, 105);
+  background: rgb(191, 64, 149);
   border: 1px solid rgb(255, 255, 255);
 }
 .btn--primary:hover, .btn--primary:focus {
-  background: #ed649f;
+  background: #d98cbf;
 }
 
 .btn--secondary {

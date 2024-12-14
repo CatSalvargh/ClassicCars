@@ -1,0 +1,23 @@
+.main-nav
+    background: $accent
+    position: absolute
+    top: 0
+    width: 100%
+    mas-height: 100vh
+
+    & ul 
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        height: 50vh
+        flex-wrap: wrap
+
+    & li
+        flex: 1 1 auto
+        //reminder of flex: grow shrink basis
+        border-bottom: 1px solid darken($accent, 5%)
+
+        //CHECK IF YOU NEED THE FOLLOING or you can keep it all at container level above
+        display: flex
+        align-items: center
+        justify-content: center
