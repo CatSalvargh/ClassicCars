@@ -2,22 +2,77 @@
     background: $accent
     position: absolute
     top: 0
-    width: 100%
+    right: 0
+    left: 100%  
     mas-height: 100vh
+    font-size: 1.2rem
+    overflow: hidden
+ 
+    transition: all ease-in-out 250ms
 
-    & ul 
+    ul 
         display: flex
         flex-direction: column
         justify-content: space-evenly
         height: 50vh
         flex-wrap: wrap
 
-    & li
+    li
         flex: 1 1 auto
-        //reminder of flex: grow shrink basis
-        border-bottom: 1px solid darken($accent, 5%)
+        //reminder of flex: grow - shrink - basis
+        border-bottom: 1px solid darken($accent, 15%)
+        display: flex
 
-        //CHECK IF YOU NEED THE FOLLOING or you can keep it all at container level above
+    a
+        color: $text-inverse
+        flex-basis: 100%
         display: flex
         align-items: center
         justify-content: center
+
+        &:hover
+            background: rgba(255, 255, 255, 0.15)
+            //Do an RGB avobe, so it works with any color added to the links
+    
+    &.is-open
+        left: 0
+
+// Mobile hamburger menu
+
+//===== container for the hamburger. do a background to visualize it
+
+.nav-toggle
+    display: block
+    padding: 1em
+    position: absolute
+    right: 1em
+    top: 1em
+    cursor: pointer
+
+//===== hamburger lines
+.hamburger, .hamburger::before, .hamburger::after
+    content: ''
+    display: block
+    width: 2em
+    height: 3px
+    background: $white
+    transition: all ease-in-out 200ms
+
+//=====first hamb line push-up
+.hamburger::before
+    transform: translateY(-6px)
+
+//=====last hamb line psh-down
+.hamburger::after
+    transform: translateY(3px)
+
+//=====Draw the X when the menu is open
+.hamburger.is-open
+    transform: rotate(45deg)
+
+    &::after
+        transform: rotate(-90deg)
+
+    &::before
+        display: none
+    

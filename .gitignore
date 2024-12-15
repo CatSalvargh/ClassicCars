@@ -1,5 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,sass
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,sass
+prepros.config
 
 ### Sass ###
 .sass-cache/
