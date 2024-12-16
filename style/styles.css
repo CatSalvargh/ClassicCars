@@ -359,7 +359,7 @@ h4:last-child,
 h5:last-child,
 h6:last-child,
 p:last-child {
-  margin: 0;
+  margin: 0 2.5em;
 }
 
 h1 {
@@ -382,10 +382,36 @@ txt-intro {
   font-size: 1.2rem;
 }
 
+p {
+  margin: 0 2.5em;
+  justify-text: justify;
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+img {
+  max-width: 150px;
+}
+
+.col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  text-align: center;
+}
+
+.col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  text-align: center;
 }
 
 .hero {
@@ -511,6 +537,14 @@ txt-intro {
 }
 .hamburger.is-open::before {
   display: none;
+}
+
+.promo {
+  padding: 10vh 0;
+}
+
+.sales-points {
+  padding: 5vh 0;
 }
 
 .btn {
