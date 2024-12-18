@@ -347,6 +347,10 @@ a {
   text-decoration: none;
 }
 
+.lg-screen {
+  display: none;
+}
+
 h1, h2, h3, h5, h6, p {
   margin: 0 0 0.75em;
 }
@@ -366,6 +370,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.15;
+  letter-spacing: 4px;
 }
 
 .title-large {
@@ -383,8 +388,31 @@ txt-intro {
 }
 
 p {
-  margin: 0 2.5em;
+  margin: 0 auto;
   justify-text: justify;
+}
+
+.title-box {
+  background: rgb(191, 64, 149);
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 1em;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+  text-align: center;
+  max-width: 80%;
+}
+.title-box + .bg-primary {
+  padding-top: 7em;
+}
+@media (min-width: 495px) {
+  .title-box {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .title-box + .bg-primary {
+    padding-top: 5em;
+  }
 }
 
 .grid {
@@ -393,7 +421,6 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 1.5em;
 }
 
 img {
@@ -418,11 +445,12 @@ img {
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(84, 108, 201)), to(rgb(22, 219, 147)));
   background: linear-gradient(rgb(84, 108, 201), rgb(22, 219, 147));
   color: rgb(255, 255, 255);
-  padding-top: 7em;
+  padding: 7.5em 2em 2.5em;
   text-align: center;
 }
 
 .hero-img {
+  display: none;
   width: 10em;
   max-with: 20%;
   min-width: 100px;
@@ -436,9 +464,14 @@ img {
 }
 
 .logo {
-  width: 20%;
-  min-width: 2%;
-  max-width: 25%;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 15%;
+}
+
+.logo-img {
+  width: 100%;
 }
 
 .main-nav {
@@ -539,12 +572,23 @@ img {
   display: none;
 }
 
-.promo {
-  padding: 10vh 0;
+.bg-primary {
+  background: rgb(84, 108, 201);
+  color: rgb(255, 255, 255);
+  padding-bottom: 4vh;
 }
 
 .sales-points {
-  padding: 5vh 0;
+  padding: 4vh 0 0;
+}
+.sales-points .sales-point {
+  margin-bottom: 2em;
+}
+.sales-points .sales-point:first-of-type {
+  margin-top: 1em;
+}
+.sales-points .sales-point:last-child {
+  margin-bottom: 0;
 }
 
 .btn {
