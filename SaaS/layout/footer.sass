@@ -1,0 +1,39 @@
+footer
+    background: rgba(20,10, 20, 0.7)
+    padding: 30px 10px
+    text-align: center
+    position: relative
+
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: url(../assets/logo/TransparentB.png)
+        background-size: 80%
+        background-repeat: no-repeat
+        background-position: center
+        background-blend-mode: saturation
+        opacity: 0.05
+
+    a, p
+        color: $text-inverse
+
+.social-links, .nav-footer
+    display: flex
+    font-size: 2rem
+    justify-content: space-evenly
+    flex-wrap: wrap
+    gap: 20px
+    padding: 0 15vw
+    color: $text-inverse
+    margin-top: 15px
+    opacity: 0.8
+
+.nav-footer
+    font-size: 1rem
+    
+

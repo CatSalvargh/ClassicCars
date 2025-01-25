@@ -351,6 +351,10 @@ a {
   display: none;
 }
 
+li {
+  list-style: none;
+}
+
 h1, h2, h3, h5, h6, p {
   margin: 0 0 0.75em;
 }
@@ -414,6 +418,19 @@ p {
   .title-box + .bg-primary {
     padding-top: 5em;
   }
+}
+
+.title-footer {
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+}
+.title-footer::before, .title-footer::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.4;
+  margin: 0.5em 0;
 }
 
 .grid {
@@ -581,16 +598,96 @@ img {
 }
 
 .sales-points {
-  padding: 4vh 0 0;
+  padding: 3vh 0 0;
 }
 .sales-points .sales-point {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .sales-points .sales-point:first-of-type {
   margin-top: 1em;
 }
 .sales-points .sales-point:last-child {
   margin-bottom: 0;
+}
+
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 30vh;
+  text-align: center;
+}
+.cta .txt-large {
+  margin-bottom: 10px;
+}
+.cta .title-large {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(84, 108, 201);
+}
+
+.cta-footer-bg {
+  background-color: #f2fefa;
+  background-image: url(../assets/Classic10.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+footer {
+  background: rgba(20, 10, 20, 0.7);
+  padding: 30px 10px;
+  text-align: center;
+  position: relative;
+}
+footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url(../assets/logo/TransparentB.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: saturation;
+  opacity: 0.05;
+}
+footer a, footer p {
+  color: rgb(255, 255, 255);
+}
+
+.social-links, .nav-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 15vw;
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+.nav-footer {
+  font-size: 1rem;
 }
 
 .btn {
