@@ -390,6 +390,7 @@ txt-intro {
 p {
   margin: 0 auto;
   justify-text: justify;
+  padding: 0 30px;
 }
 
 .title-box {
@@ -471,7 +472,8 @@ img {
 }
 
 .logo-img {
-  width: 100%;
+  width: 80%;
+  height: auto;
 }
 
 .main-nav {
