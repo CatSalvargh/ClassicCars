@@ -1,25 +1,46 @@
 .hero
-    display: flex
     background: linear-gradient($main, $secondary)
     color: $text-inverse
     padding: 4em 2em 2.5em
-    text-align: center
 
     @media(min-width: 750px)
-
-        text-align: left
         max-height: 60vh
-        align-items: center
+    
+.hero-div
+    justify-content: space-evenly
+    flex-gap: 2em
+    flex-wrap: wrap
+
 
 .hero-i
-    min-width: 50%
+    min-width: 40%
     height: auto
     border-radius: 20px
-    box-shadow: (5px 5px 5px $white)
+    box-shadow: (8px 5px 5px $main)
 
+.lg-screen
+    display: none
+
+    @media(min-width: 750px)
+        display: block
+        transform: translateY(25%)
 
 .hero-text
-    margin-top: 3vmax
+    margin-top: 4vmax
+    font-size: 0.8rem
+
+    .btn
+        margin: 1rem 0.5rem 0 0.5rem
+        
+    h1
+        font-size: clamp(0.8rem, 1.5rem, 2rem)
+
+    @media(min-width: 780px)
+        align-self: flex-start
+        margin-top: 6vmax
+
+        padd
+
 
 
 

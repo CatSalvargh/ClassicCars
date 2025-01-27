@@ -1,27 +1,30 @@
 .btn  
-    display: inline-block
     max-width: 20ch
     padding: 5px 15px
     text:
         decoration: none
         transform: uppercase
     border-radius: 5px
-    color: $text-inverse
+    
+    margin: 1rem 0.5rem 0 0.5rem
+
+    a
+        color: $text-inverse
 
     &:not(:last-of-type)
-        margin: 0 0 10px 0
+        @media(max-width: 750px)
+            margin-bottom: 0
 
 .btn--primary
     background: $accent
     border: 1px solid $text-inverse
 
-    &:hover,
-    &:focus
-        background: lighten($accent, 20%)
+    &:hover, &:focus
+        background: darken($accent, 10%)
 
 .btn--secondary
+    background: none
     border: 1px solid $text-inverse
     
-    &:hover,
-    &:focus
+    &:hover, &:focus
         background: $secondary
