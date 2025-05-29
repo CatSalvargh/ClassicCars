@@ -470,19 +470,19 @@ img {
             align-items: flex-end;
   }
 }
-.hero {
+.intro {
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(84, 108, 201)), to(rgb(22, 219, 147)));
   background: linear-gradient(rgb(84, 108, 201), rgb(22, 219, 147));
   color: rgb(255, 255, 255);
   padding: 4em 2em 2.5em;
 }
 @media (min-width: 750px) {
-  .hero {
+  .intro {
     height: 55vh;
   }
 }
 
-.hero-div {
+.intro-div {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -491,7 +491,7 @@ img {
       flex-wrap: wrap;
 }
 
-.hero-i {
+.intro-i {
   min-width: 40%;
   height: auto;
   border-radius: 10px;
@@ -510,22 +510,22 @@ img {
   }
 }
 
-.hero-text {
+.intro-text {
   margin-top: 8vmax;
   font-size: 0.8rem;
 }
-.hero-text .btn {
+.intro-text .btn {
   margin: 1.5rem 0.5rem 0 0.5rem;
   width: 25ch;
 }
-.hero-text h1 {
+.intro-text h1 {
   font-size: 1.5rem;
 }
-.hero-text p {
+.intro-text p {
   text-align: center;
 }
 @media (min-width: 780px) {
-  .hero-text {
+  .intro-text {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-top: 6vmax;
@@ -868,6 +868,80 @@ footer a, footer p {
 
 .nav-footer {
   font-size: 1rem;
+}
+
+.intro-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20vh;
+}
+@media (min-width: 750px) {
+  .intro-small {
+    height: 30vh;
+  }
+}
+.intro-small h1 {
+  font-size: 3vw;
+}
+
+.page-main {
+  padding: 4vw 3vw 1vw 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.page-subsection {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2vh;
+  margin: 1.5vh;
+}
+.page-subsection h1, .page-subsection h2, .page-subsection h3 {
+  text-align: center;
+  color: #3851b2;
+}
+.page-subsection p {
+  width: 75vw;
+  color: rgb(98, 95, 106);
+  text-align: justify;
+}
+.page-subsection h1 {
+  font-size: 3vw;
+}
+.page-subsection h2 {
+  font-size: 2.5vw;
+}
+.page-subsection h3, .page-subsection span {
+  font-size: 2vw;
+}
+.page-subsection p, .page-subsection label {
+  font-size: 1.2vw;
+}
+@media (max-width: 950px) {
+  .page-subsection h1 {
+    font-size: 5.5vw;
+  }
+  .page-subsection h3, .page-subsection span {
+    font-size: 3vw;
+  }
+  .page-subsection p, .page-subsection label {
+    font-size: 2.5vw;
+  }
 }
 
 .btn {

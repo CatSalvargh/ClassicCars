@@ -1,0 +1,48 @@
+.intro-small
+    display: flex
+    height: 20vh
+    justify-content: center
+    padding-top: 20vh
+    @media(min-width: 750px)
+        height: 30vh
+    
+    h1
+        font-size: 3vw
+
+.page-main
+    padding: 4vw 3vw 1vw 3vw
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-height: 100vh
+
+.page-subsection
+    height: fit-content
+    padding: 2vh
+    margin: 1.5vh
+
+    h1, h2, h3
+        text-align: center
+        color: darken($main, 10%)
+    p
+        width: 75vw
+        color: $text-pages
+        text-align: justify
+
+    // Responsive font sizes
+    h1
+        font-size: 3vw
+    h2
+        font-size: 2.5vw
+    h3, span
+        font-size: 2vw
+    p, label
+        font-size: 1.2vw
+
+    @media (max-width: 950px)
+        h1
+            font-size: 5.5vw
+        h3, span
+            font-size: 3vw
+        p, label
+            font-size: 2.5vw
