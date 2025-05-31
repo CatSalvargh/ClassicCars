@@ -324,13 +324,7 @@ template {
 
 body {
   color: #415bc3;
-}
-
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 100%;
-  height: auto;
+  overflow: hidden;
 }
 
 container {
@@ -435,8 +429,7 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
-img {
+.grid img {
   max-width: 150px;
 }
 
@@ -474,11 +467,11 @@ img {
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(84, 108, 201)), to(rgb(22, 219, 147)));
   background: linear-gradient(rgb(84, 108, 201), rgb(22, 219, 147));
   color: rgb(255, 255, 255);
-  padding: 4em 2em 2.5em;
+  padding: 2em;
 }
 @media (min-width: 750px) {
   .intro {
-    height: 30%;
+    height: 25%;
   }
 }
 
@@ -544,7 +537,7 @@ img {
   left: 2em;
   background-image: url(../assets/Logo/HighClass-noBG-main2.png);
   width: 20vw;
-  height: 20vh;
+  height: 15vh;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -788,6 +781,12 @@ img {
     margin-bottom: 0;
   }
 }
+.sales-points img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
 
 .cta {
   display: -webkit-box;
@@ -878,15 +877,12 @@ footer a, footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 20vh;
+  padding: 15vh 0 5vh 0;
 }
 @media (min-width: 750px) {
   .intro-small {
-    height: 30vh;
+    height: 5vh;
   }
-}
-.intro-small h1 {
-  font-size: 3vw;
 }
 
 .page-main {
@@ -902,6 +898,11 @@ footer a, footer p {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+}
+
+.experiences-intro {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(84, 108, 201)), to(rgb(22, 219, 147)));
+  background: linear-gradient(rgb(84, 108, 201), rgb(22, 219, 147));
 }
 
 .page-subsection {
@@ -942,6 +943,177 @@ footer a, footer p {
   .page-subsection p, .page-subsection label {
     font-size: 2vw;
   }
+}
+
+.carousel {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  margin-top: -20vh;
+  width: 100%;
+  position: absolute;
+  inset: 0 0 0 0;
+  overflow: hidden;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel-item h2 {
+  color: white;
+}
+.carousel-item .carousel-content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 25%;
+  left: 3%;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 0;
+  -webkit-animation: popUp 0.5s 1s linear 1 forwards;
+          animation: popUp 0.5s 1s linear 1 forwards;
+}
+@-webkit-keyframes popUp {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes popUp {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+.carousel-item .carousel-content h2 {
+  color: rgb(84, 108, 201);
+  text-shadow: 3px 3px 3px black;
+}
+.carousel-item .carousel-content p {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+}
+
+.carousel-buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10vw 10px 10vw;
+  grid-template-columns: repeat(2, 10vw);
+  -ms-grid-rows: 60px;
+  grid-template-rows: 60px;
+  gap: 10px;
+}
+
+.carousel-buttons > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.carousel-buttons > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.carousel-buttons button {
+  -webkit-box-shadow: 5px 5px 12px #95929d;
+          box-shadow: 5px 5px 12px #95929d;
+  color: white;
+  text-shadow: 2px 2px 2px #263778;
+  margin: 1rem 0 0 0;
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.thumbnail {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.thumbnail .item {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 25px #e3e3e5;
+          box-shadow: 5px 5px 25px #e3e3e5;
+}
+.thumbnail .item .content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+.thumbnail .item .content .title, .thumbnail .item .content .desc {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+.thumbnail .item .content .desc {
+  font-size: 0.8em;
+  color: #c9c8cd;
+}
+
+.carousel-arrows {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+.carousel-arrows button {
+  width: 45px;
+  height: 45px;
+  border-radius: 45%;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 1.75rem;
+  font-wheight: bold;
+  color: white;
 }
 
 .btn {
