@@ -1,26 +1,25 @@
 export const header = 
-`<div class="nav-div">
-    <div class="logo col"></div>
-    <nav class="main-nav col">
-        <ul class="unstyled-list">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/experiences.html">Experiences</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="nav-toggle">
-        <div class="hamburger"></div>
-    </div>
-</div>`;
+    `<div class="nav-div">
+        <div class="logo col"></div>
+        <nav class="main-nav col">
+            <ul class="unstyled-list">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/experiences.html">Experiences</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </div>`;
 
-export const pages_details = [
+export const page_details = [
         {
             name: 'home',
             content:
-            `
-                <!--====== intro Area ======-->
+            `<!--====== intro Area ======-->
                 <section class="intro">
                     <div class="container grid intro-div">
                         <div class="intro-text col col--2-3">
@@ -40,7 +39,7 @@ export const pages_details = [
                         <h1 class="col col--full">What classy experience are you up to today</h1>
 
                         <div class="sales-point col col--1-3">
-                            <img src="../assets/Classic12-sport1-circle-noBG..png" alt="Sport car">
+                            <img src="../assets/Classic12-sport1-circle-noBG.png" alt="Sport car">
                             <h2>Sport Cars</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus aliquid est blanditiis recusandae provident voluptates.</p>
                         </div>
@@ -108,13 +107,12 @@ export const pages_details = [
                             <li><a href="">Contact</a></li>
                         </ul>
                     </footer>  
-                </section> 
-            `
+                </section>`
         },
 
         {
             name: 'about',
-            content: 
+            content:
             `<section class="intro intro-small">
                     <h1 class="title-large section-title">Our Story</h1>
             </section>
@@ -157,6 +155,9 @@ export const pages_details = [
                     </div>    
                 </div>
             </section>`
+        },
+        {
+            name: 'experiences'
         }
 ];
 
