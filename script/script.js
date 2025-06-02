@@ -1,4 +1,4 @@
-import {header, page_details as pages} from './page_details.js'
+import {header, footer, page_details as pages} from './page_details.js'
 
 $(document).ready(function() {
 
@@ -12,6 +12,7 @@ $(document).ready(function() {
 pages.forEach( (page) => {
     let pageHeader = document.getElementById(`${page.name}_header`)
     let pageMain = document.getElementById(`${page.name}_main`)
+    let pageFooter = document.getElementById(`${page.name}_footer`)
 
     if (pageHeader) {
         pageHeader.innerHTML = header
@@ -19,6 +20,12 @@ pages.forEach( (page) => {
     if (pageMain && page.content) {
         pageMain.innerHTML = page.content
     };
-    console.log(pageHeader, pageMain)
+    if (pageFooter && page.footer) {
+        pageFooter.innerHTML = page.footer
+    } else if (pageFooter) {
+        pageFooter.innerHTML = footer
+    } else {
+    }
+
     return;
 })

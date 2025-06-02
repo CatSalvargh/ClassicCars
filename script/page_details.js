@@ -7,13 +7,37 @@ export const header =
                 <li><a href="/pages/about.html">About</a></li>
                 <li><a href="/pages/experiences.html">Experiences</a></li>
                 <li><a href="">Pricing</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="nav-toggle">
             <div class="hamburger"></div>
         </div>
     </div>`;
+
+export const footer =
+    `<footer>
+        <div class="container">
+            <p class="title-footer"> You are one step closer to your dream life</p>
+            <ul class="social-links">
+                <li><a href=""></a><i class="fa fa-camera-retro" aria-hidden="true"></i></li>
+                <li><a href=""></a><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                <li><a href=""></a><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                <li><a href=""></a><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+
+        <ul class="unstyled-list nav-footer">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/experiences.html">Experiences</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+        </footer>
+`
 
 export const page_details = [
         {
@@ -41,17 +65,24 @@ export const page_details = [
                         <div class="sales-point col col--1-3">
                             <img src="../assets/Classic12-sport1-circle-noBG.png" alt="Sport car">
                             <h2>Sport Cars</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus aliquid est blanditiis recusandae provident voluptates.</p>
+                            <p>
+                            <span>Sophistication on four wheels\n</span>
+                            \n\nWith its sporty agility and elegant design, the Macan makes winding mountain roads a pleasure. Glide past snow-capped peaks, savor the comfort of heated leather seats, and arrive at your chalet feeling as relaxed as you are exhilarated. 
+                            </p>
                         </div>
                         <div class="sales-point col col--1-3">
                             <img src="../assets/Classic11-wedding-circle-noBG.png" alt="Wedding car">
                             <h2>Weddings & Celebrations</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus aliquid est blanditiis recusandae provident voluptates.</p>
+                            <p>
+                            <span>CAn unforgettable entrance</span>\nPicture yourself arriving at a sun-kissed beach wedding, the salty breeze teasing your veil as you step out of a sleek Porsche 911 Carrera. This sports car isn’t just transportation – it’s a statement. The symphony of its engine harmonizes with the crashing waves. This isn’t just a wedding car; it’s a passport to making your grand entrance unforgettable.
+                            </p>
                         </div>
                         <div class="sales-point col col--1-3">
                             <img src="../assets/Classic14-circle-noBG.png" alt="4X4 car">
                             <h2>4x4 Adrenaline</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus aliquid est blanditiis recusandae provident voluptates.</p>
+                            <p>
+                            <span>Embark on an expedition in the powerful Nissan Patrol</span>\nThis SUV was made for adventure seekers craving winding trails and panoramic vistas. Whether you’re chasing waterfalls or scaling mountain passes, the Patrol’s blend of comfort and reliability transforms every journey into a legendary exploration.
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -76,38 +107,34 @@ export const page_details = [
                             <div class="col--1-3  promo-img"></div>
                         </div>
                     </div>
-                </section>
+                </section>`,
+            footer: 
+            `<section class="cta">
+                <p class="txt-large">Ready for the adventure?</p>
+                <h1 class="title-large">Take your life to the next level</h1>
+                <button class="btn btn--primary"><a href="">Get your Classic</a></button>
+            </section>
+            <footer class=home_footer>
+                <div class="container">
+                    <p class="title-footer"> You are one step closer to your dream life</p>
+                    <ul class="social-links">
+                        <li><a href=""></a><i class="fa fa-camera-retro" aria-hidden="true"></i></li>
+                        <li><a href=""></a><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""></a><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                        <li><a href=""></a><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
 
-                <!--====== CTA - Call to Action ======-->
-                <section class="cta-footer-bg">
-                    <section class="cta">
-                        <p class="txt-large">Ready for the adventure?</p>
-                        <h1 class="title-large">Take your life to the next level</h1>
-                        <button class="btn btn--primary"><a href="">Get your Classic</a></button>
-                    </section>
-                    <!--====== Footer ======-->
-                    <footer>
-                        <div class="container">
-                            <p class="title-footer"> You are one step closer to your dream life</p>
-                            <ul class="social-links">
-                                <li><a href=""></a><i class="fa fa-camera-retro" aria-hidden="true"></i></li>
-                                <li><a href=""></a><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
-                                <li><a href=""></a><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-                                <li><a href=""></a><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-                            </ul>
-                        </div>
-
-                        <ul class="unstyled-list nav-footer">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Experiences</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </footer>  
-                </section>`
+                <ul class="unstyled-list nav-footer">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/experiences.html">Experiences</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </footer>`
         },
 
         {
@@ -158,6 +185,36 @@ export const page_details = [
         },
         {
             name: 'experiences'
+        },
+        {
+            name: 'contact',
+            content:
+            `  <section class="intro intro-small intro_transparent">
+                    <h1 class="title-large section-title">Get in touch</h1>
+            </section>
+            <section class="contact">
+            <div class="contact-details">
+                <form action="" method="dialog" id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" autocomplete="on">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="lastname" autocomplete="on">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" autocomplete="on">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="10" cols="20" autocomplete="on" placeholder="Write your questions or suggestions here!"></textarea>
+                    <div class="read-options">
+                        <label for="yes"></label>
+                        <input type="checkbox" name="read" id="yes" value="Yes">
+                        <p>I confirm that I have read and accept the <a>terms and conditions</a>
+                        and <a>the privacy policy</a></p>
+                    </div>
+                    <input type="submit" value="Send" id="send-btn" class="btn js-add-btn btn--secondary">
+                </form>
+            </div>
+            </section>`
         }
+
+
 ];
 

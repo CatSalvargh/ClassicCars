@@ -1,0 +1,66 @@
+.contact-body
+    background-image: url(../assets/Classic1.jpg)
+    background-size: cover
+    background-position: top
+    background-repeat: no-repeat
+    background-blend-mode: saturation
+    backdrop-filter: blur(6px)
+    display: flex
+    flex-direction: column
+    align-items: space-evenly
+    gap: 40px
+
+.contact-details
+    justify-self: center
+    border-radius: 15px
+    width: 50vw
+    min-width: 300px
+    padding: 15px
+    border: 1.5px solid lighten($main, 40%)
+    border-radius: 15px
+    box-shadow: 8px 8px 8px 4px rgba(lighten($main, 40%), 40%)
+    
+#contact-form
+    display: flex
+    flex-direction: column
+    gap: 0.25rem
+    text-shadow: 1px 1px black
+
+    &::a 
+        text-decoration: underline steelblue
+        cursor: pointer
+        color: steelblue
+        text-shadow: none
+    &::p 
+        font-size: 15px
+
+.read-options
+    display: flex
+    padding: 1.5rem
+
+input[type="checkbox"]
+    width: 1.5rem
+    height: 1.5rem
+
+textarea
+    height: 150px
+
+input[type="submit"]
+    align-self: center
+    width: 9rem
+
+label
+    color: white
+
+input, textarea
+    border: 1.5px solid steelblue
+    border: 1px solid white
+    border-radius: 8px
+    background: lighten($main, 60%)
+    color: darken($bulky, 20%)
+
+
+
+
+
+
