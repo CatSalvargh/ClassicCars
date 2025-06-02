@@ -1,136 +1,67 @@
-.carousel
-    width: 100%
+#experiences_main
     height: 100vh
-    overflow: hidden
-    position: relative
 
-.carousel-item   
-    margin-top: -20vh 
+
+.carousel-container
     width: 100%
-    position: absolute
-    inset: 0 0 0 0
-    overflow: hidden
+    height: 75vh 
+    margin: 0 auto
 
-    &:nth-child(1)
-        z-index: 100
+.card
+    width: 100%
+    height: 100%
+    display: grid
+    grid-template-columns: 40% 50%
+    grid-template-rows: 1fr
+    gap: 2%
+    padding: 2% 8%
+
+    @media(max-width: 750px)
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr
+
+.image-card
+    object-fit: cover
+    border-radius: 10px
+    box-shadow: 5px 5px 25px lighten($bulky, 50%)
+    padding: 2%
 
     img
-        width: 0
-        height: 0
+        width: 98%
+        height: 98%
         object-fit: cover
-        
-    h2
-        color: white
-    
-    .carousel-content
-        position: absolute
-        display: flex
-        flex-direction: column
-        top: 25%
-        left: 3%
-        width: 30%
-        align-items: center
-        padding: 2rem
-        background: rgba(lighten($bulky, 75%), 10%)
+        z-index: -1
+        //animation: disapear 1s 1.5s linear 1 forwards
 
-        //For ANIMATION
-        transform: translateY(30%)
-        filter: blur(20px)
-        opacity: 0
-        animation: popUp 0.5s 1s linear 1 forwards
+        //@keyframes disapear to filter: blur(0) opacity: 0
 
-        @keyframes popUp
-            to
-                transform: translateY(0)
-                filter: blur(0)
-                opacity: 1
 
-        h2
-            color: $main
-            text-shadow: 3px 3px 3px darken($main, 75%)
-
-            
-
-        p
-            color: lighten($bulky, 75%)
-            text-shadow: 2px 2px 2px darken($main, 75%)
-            margin: 0
-        
-
-.carousel-buttons
-    display: grid
-    grid-template-columns: repeat(2, 10vw)
-    grid-template-rows: 60px
-    gap: 10px
-    
-    button
-        box-shadow: 5px 5px 12px lighten($bulky, 20%)
-        color: lighten($bulky, 75%)
-        text-shadow: 2px 2px 2px darken($main, 25%)
-        margin: 1rem 0 0 0
-        font-size: 0.75rem
-        background: rgba(lighten($bulky, 75%), 10%)
-
-    
-.thumbnail
-    position: absolute
-    bottom: 7vh
-    left: 50%
-    width: max-content
-    z-index: 100
+.text-content
     display: flex
-    gap: 20px
+    flex-direction: column
+    gap: 1.5rem
+    align-items: center
+    padding: 1.5rem
+    padding-top: 5vh
+    border-radius: 20px
+    box-shadow: 5px 5px 25px lighten($bulky, 50%)
 
-    .item
-        position: relative
-        width: 200px
-        height: 300px
-        flex-shrink: 0
-
-        img
-            width: 100%
-            height: 100%
-            object-fit: cover
-            border-radius: 20px
-            box-shadow: 5px 5px 25px lighten($bulky, 50%)
-             
-
-        .content
-            position: absolute
-            bottom: 10px
-            left: 10px
-            right: 10px
-
-            .title, .desc
-                color: lighten($bulky, 70%)
-                text-align: center
-                font-size: 1.5em
-
-            .desc
-                font-size: 0.8em
-                color: lighten($bulky, 40%)
-
+// ---ARROWS
 .carousel-arrows
-    position: absolute
-    top: 90%
-    left: 35%
     display: flex
     gap: 10px
     padding: 0
 
     button
-        width: 45px
-        height: 45px
+        width: 2rem
+        height: 2rem
         border-radius: 45%
         border: none
-        background: rgba(lighten($bulky, 70%), 40%)
+        background: rgba(lighten($bulky, 40%), 60%)
         font-size: 1.75rem
         font-wheight: bold
         color: white
-
-
-
-
+        cursor: pointer
 
 
 
