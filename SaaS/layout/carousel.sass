@@ -21,36 +21,79 @@
         grid-template-rows: 1fr 1fr
 
 .image-card
-    object-fit: cover
     border-radius: 10px
     box-shadow: 5px 5px 25px lighten($bulky, 50%)
     padding: 2%
+   
 
     img
         width: 98%
         height: 98%
         object-fit: cover
         z-index: -1
-        //animation: disapear 1s 1.5s linear 1 forwards
-
-        //@keyframes disapear to filter: blur(0) opacity: 0
-
+    
+    #image-current
+        animation: disapear 1s 1.3s linear 1 forwards
+        
+        @keyframes disapear 
+            to 
+                filter: blur(20px) 
+                opacity: 0
+                width: 0
+    
+    #image-replace
+        opacity: 0
+        width: 0
+        animation: showUp 1s 1.3s linear 1 forwards
+        
+        @keyframes showUp
+            to 
+                opacity: 1
+                width: 98%
 
 .text-content
-    display: flex
-    flex-direction: column
-    gap: 1.5rem
-    align-items: center
-    padding: 1.5rem
-    padding-top: 5vh
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 85% 10%
+    grid-template-areas: "text" "buttons"
+    justify-items: center
+    text-align: center
+    height: 70vh   
+    padding: 2rem 1.2rem 1.5rem 1.2rem
     border-radius: 20px
     box-shadow: 5px 5px 25px lighten($bulky, 50%)
+
+#text-current
+    grid-area: 'text'
+    grid-row-start: 1
+    grid-column-start: 1
+    grid-row-end: span 1
+    animation: hide-text 1s 1.3s linear 1 forwards
+
+    @keyframes hide-text
+        to 
+            backdrop-filter: blur(60px) 
+            opacity: 0
+
+#text-replace
+    opacity: 0
+    grid-row-start: 1
+    grid-column-start: 1
+    grid-row-end: span 1
+    backdrop-filter: blur(20px) 
+    animation: show-text 1s 1.4s linear 1 forwards
+
+    @keyframes show-text
+        to 
+            opacity: 1
+            backdrop-filter: blur(0) 
 
 // ---ARROWS
 .carousel-arrows
     display: flex
     gap: 10px
     padding: 0
+    grid-area: 'buttons'
 
     button
         width: 2rem
@@ -62,6 +105,7 @@
         font-wheight: bold
         color: white
         cursor: pointer
+
 
 
 

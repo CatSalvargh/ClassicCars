@@ -66,22 +66,23 @@ export const page_details = [
                             <img src="../assets/Classic12-sport1-circle-noBG.png" alt="Sport car">
                             <h2>Sport Cars</h2>
                             <p>
-                            <span>Sophistication on four wheels\n</span>
-                            \n\nWith its sporty agility and elegant design, the Macan makes winding mountain roads a pleasure. Glide past snow-capped peaks, savor the comfort of heated leather seats, and arrive at your chalet feeling as relaxed as you are exhilarated. 
+                            Sophistication on four wheels:\n
+                            \n\n<span>With its sporty agility and elegant design, the Macan makes winding mountain roads a pleasure. Glide past snow-capped peaks, savor the comfort of heated leather seats, and arrive at your chalet feeling as relaxed as you are exhilarated.
+                            This is sophistication on four wheels.</span>
                             </p>
                         </div>
                         <div class="sales-point col col--1-3">
                             <img src="../assets/Classic11-wedding-circle-noBG.png" alt="Wedding car">
                             <h2>Weddings & Celebrations</h2>
                             <p>
-                            <span>CAn unforgettable entrance</span>\nPicture yourself arriving at a sun-kissed beach wedding, the salty breeze teasing your veil as you step out of a sleek Porsche 911 Carrera. This sports car isn’t just transportation – it’s a statement. The symphony of its engine harmonizes with the crashing waves. This isn’t just a wedding car; it’s a passport to making your grand entrance unforgettable.
+                            An unforgettable entrance:\n<span>Picture yourself arriving at a sun-kissed beach wedding, the salty breeze teasing your veil as you step out of a sleek Porsche 911 Carrera. The symphony of its engine harmonizing with the crashing waves. This isn’t just a sports car, it’s a statement, a passport to making your grand entrance unforgettable.</span>
                             </p>
                         </div>
                         <div class="sales-point col col--1-3">
                             <img src="../assets/Classic14-circle-noBG.png" alt="4X4 car">
                             <h2>4x4 Adrenaline</h2>
                             <p>
-                            <span>Embark on an expedition in the powerful Nissan Patrol</span>\nThis SUV was made for adventure seekers craving winding trails and panoramic vistas. Whether you’re chasing waterfalls or scaling mountain passes, the Patrol’s blend of comfort and reliability transforms every journey into a legendary exploration.
+                            Challenging any terrain with a powerful Nissan Patrol:\n<span>This SUV was made for adventure seekers craving winding trails and panoramic vistas. Whether you’re chasing waterfalls or scaling mountain passes, the Patrol’s blend of comfort and reliability transforms every journey into a legendary exploration.</span>
                             </p>
                         </div>
                     </div>
@@ -92,15 +93,15 @@ export const page_details = [
                     <div class="grid">
                         <div class="title-box">
                             <h1>Personalize your Classic</h1>
-                            <p>There are a number of complementing items to enhance your experience, or...<br/>Tell us what else you need, to make the occassion perfect! </p>
+                            <p> Don't see the extra you are looking for? Let's find it together or...<br/>Tell us what else you need, to make the occassion perfect! </p>
                         </div>
 
                         <div class="promo-div">
                             <div class="col--1-3 bg-primary">
-                                <h1>Doing Great things for you</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, porro nam debitis iusto, vero id, fugiat cumque quasi ea velit libero tempore delectus. Omnis impedit magnam sed voluptate amet hic.
-                                    <br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, numquam incidunt! Quisquam nostrum sequi pariatur fuga quo, nesciunt, tempora tenetur dolorum explicabo laudantium assumenda laborum ipsam maxime dicta, enim neque! </p>
+                                <h1>Personalize Your Journey</h1>
+                                <p>
+                                This experience is all about you. We offer many premium extras tailored to your adventure. Add a rooftop tent or camping gear for weekend escapes, or upgrade to chauffeur service for a wedding day fit for royalty. Planning a romantic getaway? Include a bottle of champagne, floral arrangements, or a curated picnic basket. Tech-savvy traveler? Choose from Wi-Fi hotspots, GoPro kits, or Bluetooth speaker systems. Kids on board? We’ve got car seats, tablet entertainment packs, and more. Every detail matters – so let’s make it perfect. At checkout, simply select the extras that match your vision. The road is yours. Make it unforgettable.
+                                </p>
                                 <button class="btn btn--primary"><a href="" >Rent now</a></button>
                             </div>
 

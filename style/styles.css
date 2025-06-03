@@ -1010,8 +1010,6 @@ footer {
 }
 
 .image-card {
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 25px #e3e3e5;
           box-shadow: 5px 5px 25px #e3e3e5;
@@ -1024,24 +1022,114 @@ footer {
      object-fit: cover;
   z-index: -1;
 }
+.image-card #image-current {
+  -webkit-animation: disapear 1s 1.3s linear 1 forwards;
+          animation: disapear 1s 1.3s linear 1 forwards;
+}
+@-webkit-keyframes disapear {
+  to {
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+    opacity: 0;
+    width: 0;
+  }
+}
+@keyframes disapear {
+  to {
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+    opacity: 0;
+    width: 0;
+  }
+}
+.image-card #image-replace {
+  opacity: 0;
+  width: 0;
+  -webkit-animation: showUp 1s 1.3s linear 1 forwards;
+          animation: showUp 1s 1.3s linear 1 forwards;
+}
+@-webkit-keyframes showUp {
+  to {
+    opacity: 1;
+    width: 98%;
+  }
+}
+@keyframes showUp {
+  to {
+    opacity: 1;
+    width: 98%;
+  }
+}
 
 .text-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1.5rem;
-  padding-top: 5vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 85% 10%;
+  grid-template-rows: 85% 10%;
+      grid-template-areas: "text" "buttons";
+  justify-items: center;
+  text-align: center;
+  height: 70vh;
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 25px #e3e3e5;
           box-shadow: 5px 5px 25px #e3e3e5;
+}
+
+#text-current {
+  grid-area: "text";
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -webkit-animation: hide-text 1s 1.3s linear 1 forwards;
+          animation: hide-text 1s 1.3s linear 1 forwards;
+}
+@-webkit-keyframes hide-text {
+  to {
+    -webkit-backdrop-filter: blur(60px);
+            backdrop-filter: blur(60px);
+    opacity: 0;
+  }
+}
+@keyframes hide-text {
+  to {
+    -webkit-backdrop-filter: blur(60px);
+            backdrop-filter: blur(60px);
+    opacity: 0;
+  }
+}
+
+#text-replace {
+  opacity: 0;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-animation: show-text 1s 1.4s linear 1 forwards;
+          animation: show-text 1s 1.4s linear 1 forwards;
+}
+@-webkit-keyframes show-text {
+  to {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
+}
+@keyframes show-text {
+  to {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
 }
 
 .carousel-arrows {
@@ -1050,6 +1138,7 @@ footer {
   display: flex;
   gap: 10px;
   padding: 0;
+  grid-area: "buttons";
 }
 .carousel-arrows button {
   width: 2rem;
