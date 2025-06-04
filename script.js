@@ -1,4 +1,4 @@
-import {header, footer, page_details as pages} from './page_details.js'
+import {header, footer, page_details as pages} from './script/page_details.js'
 
 $(document).ready(function() {
 

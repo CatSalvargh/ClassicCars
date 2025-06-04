@@ -4,10 +4,10 @@ export const header =
         <nav class="main-nav col">
             <ul class="unstyled-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/experiences.html">Experiences</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
                 <li><a href="">Pricing</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="nav-toggle">
@@ -31,10 +31,10 @@ export const footer =
 
         <ul class="unstyled-list nav-footer">
             <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/experiences.html">Experiences</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
             <li><a href="">Pricing</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         </footer>
 `
@@ -63,7 +63,7 @@ export const page_details = [
                         <h1 class="col col--full">What classy experience are you up to today</h1>
 
                         <div class="sales-point col col--1-3">
-                            <img src="../assets/Classic12-sport1-circle-noBG.png" alt="Sport car">
+                            <img src="assets/Classic12-sport1-circle-noBG.png" alt="Sport car">
                             <h2>Sport Cars</h2>
                             <p>
                             Sophistication on four wheels:\n
@@ -72,14 +72,14 @@ export const page_details = [
                             </p>
                         </div>
                         <div class="sales-point col col--1-3">
-                            <img src="../assets/Classic11-wedding-circle-noBG.png" alt="Wedding car">
+                            <img src="assets/Classic11-wedding-circle-noBG.png" alt="Wedding car">
                             <h2>Weddings & Celebrations</h2>
                             <p>
                             An unforgettable entrance:\n<span>Picture yourself arriving at a sun-kissed beach wedding, the salty breeze teasing your veil as you step out of a sleek Porsche 911 Carrera. The symphony of its engine harmonizing with the crashing waves. This isn’t just a sports car, it’s a statement, a passport to making your grand entrance unforgettable.</span>
                             </p>
                         </div>
                         <div class="sales-point col col--1-3">
-                            <img src="../assets/Classic14-circle-noBG.png" alt="4X4 car">
+                            <img src="assets/Classic14-circle-noBG.png" alt="4X4 car">
                             <h2>4x4 Adrenaline</h2>
                             <p>
                             Challenging any terrain with a powerful Nissan Patrol:\n<span>This SUV was made for adventure seekers craving winding trails and panoramic vistas. Whether you’re chasing waterfalls or scaling mountain passes, the Patrol’s blend of comfort and reliability transforms every journey into a legendary exploration.</span>
@@ -130,10 +130,10 @@ export const page_details = [
 
                 <ul class="unstyled-list nav-footer">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/experiences.html">Experiences</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
                     <li><a href="">Pricing</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </footer>`
         },
