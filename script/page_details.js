@@ -3,11 +3,11 @@ export const header =
         <div class="logo col"></div>
         <nav class="main-nav col">
             <ul class="unstyled-list">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/experiences.html">Experiences</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/experiences.html">Experiences</a></li>
                 <li><a href="">Pricing</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="nav-toggle">
@@ -30,11 +30,11 @@ export const footer =
         </div>
 
         <ul class="unstyled-list nav-footer">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/experiences.html">Experiences</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/experiences.html">Experiences</a></li>
             <li><a href="">Pricing</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
         </ul>
         </footer>
 `
@@ -129,11 +129,11 @@ export const page_details = [
                 </div>
 
                 <ul class="unstyled-list nav-footer">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/pages/about.html">About</a></li>
-                    <li><a href="/pages/experiences.html">Experiences</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/experiences.html">Experiences</a></li>
                     <li><a href="">Pricing</a></li>
-                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
                 </ul>
             </footer>`
         },
